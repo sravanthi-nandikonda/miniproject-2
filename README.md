@@ -21,3 +21,4 @@ How to link js with my html page and implementing different function using
 javascript
 
 
+published @ https://sravanthi-nandikonda.github.io/miniproject-2/ 
