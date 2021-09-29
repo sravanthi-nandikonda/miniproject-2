@@ -1,7 +1,7 @@
 # To-Do-List
 
 This is a to-do-list app designed to add the list of items that has to be done.
-and can hav a check on the pending list.
+and can edit the task,mark the completed task and can delete any task.
 
 Users should be able to see the add button only gets enabels when he starts
 adding something and should be able to delete the task once it is done.
