@@ -1,31 +1,73 @@
-<!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+ <title>TO DO LIST</title>
+ <style>
+ </style>
 </head>
+
 <body>
-  <div class="wrapper">
-    <header>
+   
         
-    </header>
-    <div id="date"></div>
-    <div class="inputField">
-      <input type="text" placeholder="Add your new todo">
-      <button><i class="fas fa-plus"></i></button>
-    </div>
-    <ul class="todoList">
-      <!-- data are comes from local storage -->
-    </ul>
-    <div class="footer">
-      <span>You have <span class="pendingTasks"></span> pending tasks</span>
-      <button>Clear All</button>
-    </div>
-  </div>
-  <script src="app.js"></script>
-</body>
-</html>
+      <div class="container mycontainer">
+        <div class="row justify-content-md-center">
+          <div class="col-sm-12 col-md-8">
+            <div class="myimage py-3">
+                <div id="date" class="date">
+
+                </div>
+                <form class="form-inline searchbox">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                      id="searchtextbox" />
+                  </form>
+            </div>
+            
+            <div class="todo-inner">
+              <div class="form-row">
+                <div class="col-8 mr-sm-2">
+                  <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                  <input type="hidden" id="saveindex">
+                </div>
+                <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+
+                </button>
+                <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
+                  Save Task
+                </button>
+                <button type="button" id="deleteallbtn" class="btn btn-danger m-1">
+                Clear All
+                </button>
+              </div>
+              <div class="to-do-output">
+                <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                  
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+  
+  </html>
